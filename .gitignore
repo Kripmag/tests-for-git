@@ -5,3 +5,6 @@
 bin
 # удалим конкретный файл с секретными сведениями
 \data\secret_key.txt
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
