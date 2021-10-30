@@ -29,6 +29,10 @@ int DaysInYear(int year)
 {
 	return 	IsLeapYear(year) ? 365 : 364;
 }
+int SeconsInHours(int hours)
+{
+	return hours * 60;
+}
 int main()
 {
 	cout << IsLeapYear(2000) << " 2000" << '\n';
