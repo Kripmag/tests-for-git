@@ -5,7 +5,25 @@ bool IsLeapYear(int year)
 {
 	return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
 }
-
+/// <summary>
+/// Принимает месяц и дни двух дат
+/// </summary>
+/// <param name="month1"></param>
+/// <param name="day1"></param>
+/// <param name="month2"></param>
+/// <param name="day2"></param>
+/// <returns>1 если первая дата ближе, 2 если вторая дата ближе</returns>
+int LaterInYear(int month1, int day1, int month2, int day2)
+{
+	if (month1 < month2)
+		return 2;
+	if (month1 > month2)
+		return  1;
+	if (day1 < day2)
+		return  2;
+	if (day1 > day2)
+		return  1;
+}
 
 int main()
 {

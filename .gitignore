@@ -11,9 +11,6 @@ bin
 
 # Build results
 [Dd]ebug/
-
-
-
 *.user
 *.vcxproj
 *.vcxproj.filters
